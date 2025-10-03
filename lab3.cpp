@@ -11,11 +11,14 @@ using namespace std;
 
 int main() {
   double Nu, Re, diameter, stepCross1, stepCross2, sDiagonal, delta, step;
-  diameter = 25.4;
-  stepCross1 = 60.0;
   Re = 2.0 * pow(10, 4);
   step = 20.0;
   stepCross2 = 30.0;
+  
+  cout << "Diameter = ";
+  cin >> diameter;
+  cout << "Cross pitch of rows of pipes = ";
+  cin >> stepCross1;
   
   for (int i = 0; i < 5; i++) {
   sDiagonal =  diameter * sqrt(0.25 * pow(stepCross1 / diameter, 2) + pow(stepCross2 / diameter, 2));
